@@ -94,7 +94,38 @@ nav a:hover {
 }
 
 
+ul {
+  padding: 50px 0;
+  
+  }
+  
+  ul li {
+    width: 6px;
+    background-color: white;
+    list-style-type: none;
+    height:200px; 
+    padding-bottom: 20px;
+    
+  }
+  
+  
+  ul li::after {
+    content: 'E';
+    position: absolute;
+    background: var(--h1-colora);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    left:50%;
+    transform: translateX(-50%);
+    top: 50%;
+  }
 
-
-
+.sepdivlolo {
+  margin-right: 10px;
+    min-width: 10rem;
+    position: relative;
+    left: 50px;
+    width: 100%;
+}
 
