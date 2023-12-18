@@ -42,8 +42,6 @@ p {
   font-size: 2rem;
 }
 
-
-
 nav {
   overflow: hidden;
   height: 100px;
@@ -52,8 +50,6 @@ nav {
   top: 0;
   background-color: var(--background-color);
 }
-
-
 
 nav a {
   float: left;
@@ -105,7 +101,7 @@ ul li {
   padding-bottom: 20px;
 }
 
-ul li::before{
+ul li::before {
   display: block;
   content: "";
   position: relative;
@@ -124,10 +120,23 @@ ul li div {
   min-width: 400px;
 }
 
-
 @media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
   .navbarwrapper {
     background-color: var(--background-color);
   }
-
+  .sectionwrapper {
+    padding-left: 2vw;
+  }
 }

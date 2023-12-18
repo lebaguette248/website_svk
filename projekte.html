@@ -3,40 +3,171 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Sven Von Känel</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Mono:ital@1&display=swap"
       rel="stylesheet"
     />
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style_skills.css" />
-
-    <script src="script.js" defer></script>
-    <script src="script_aboutme.js" defer></script>
-
+    <link rel="stylesheet" href="style_projekte.css" />
   </head>
   <body>
-    <nav>
+    <!-- <nav>
       <a href="#Aboutme">About me</a>
       <a href="#Projekte">Projekte</a>
       <a href="#zeugnisse">Zeugnisse</a>
-    </nav>
+    </nav> -->
 
     <section id="Projekte">
       <div class="sectionwrapper">
         <h1>Projekte</h1>
         <p>
-          Hier sind meine Projekte aufgelistet dich <br>
-           ich bisher in meiner Karriere bewältigt habe.
+          Hier sind meine Projekte aufgelistet dich <br />
+          ich bisher in meiner Karriere bewältigt habe.
         </p>
-
-        
       </div>
-    </section> 
-    
+    </section>
+    <section id="projectlist">
+      <div class="sectionwrapper" id="projectlist">
+        <!-- projectcontent -->
+        <button
+          type="button"
+          class="unset"
+          data-bs-toggle="modal"
+          data-bs-target="#projekt1"> <!-- Change name to the Modal that needs to be triggered --> 
+          <div class="projectwrapper">
+            <div>
+              <h1>Blabla</h1>
+              <p>Lil Info</p>
+            </div>
+            <div>
+              <img src="pictures/BSPIMG.png" class="img-fluid" />
+            </div>
+          </div>
+        </button>
+        <!-- end -->
+        <!-- projectcontent -->
+        <button
+          type="button"
+          class="unset"
+          data-bs-toggle="modal"
+          data-bs-target="#projekt2"
+        >
+          <div class="projectwrapper">
+            <div>
+              <h1>Blabla</h1>
+              <p>Lil Info</p>
+            </div>
+            <div>
+              <img src="pictures/BSPIMG.png" class="img-fluid" />
+            </div>
+          </div>
+        </button>
+        <!-- end -->
+        <!-- projectcontent -->
+        <button
+          type="button"
+          class="unset"
+          data-bs-toggle="modal"
+          data-bs-target="#projekt3"
+        >
+          <div class="projectwrapper">
+            <div>
+              <h1>Blabla</h1>
+              <p>Lil Info</p>
+            </div>
+            <div>
+              <img src="pictures/BSPIMG.png" class="img-fluid" />
+            </div>
+          </div>
+        </button>
+        <!-- end -->
+        <!-- projectcontent -->
+        <button
+          type="button"
+          class="unset"
+          data-bs-toggle="modal"
+          data-bs-target="#projekt4" > 
+          <div class="projectwrapper">
+            <div>
+              <h1>Blabla</h1>
+              <p>Lil Info</p>
+            </div>
+            <div>
+              <img src="pictures/BSPIMG.png" class="img-fluid" />
+            </div>
+          </div>
+        </button>
+        <!-- end -->
+      </div>
+    </section>
+
+    <section>
+      <div class="modaltest">
+
+        <!-- Modal (CHANGE "ID" to same on )-->
+        <div
+          class="modal fade"
+          id="projekt1"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Cool Project 1
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Very cool text
+                </p>
+                <img src="pictures/BSPIMG.png" class="img-fluid" alt="">
+                <p>
+                  more text yay
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

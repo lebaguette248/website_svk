@@ -1,0 +1,19 @@
+.projectwrapper {
+    width: 40rem;
+}
+
+#projectlist    {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.unset  {
+    all: unset;
+}
+
+.modal-content  {
+    background-color: var(--background-color);
+}
