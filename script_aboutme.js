@@ -1,25 +1,88 @@
-var progressnumber = 76; // add percentage (0-100)
+const ctx1 = document.getElementById("chart1");
+const ctx2 = document.getElementById("chart2");
+const ctx3 = document.getElementById("chart3");
+const ctx4 = document.getElementById("chart4");
 
-var convertedprogress = 250 - (progressnumber * 250) / 100;
-$("#progressbar").css('stroke-dashoffset', ' ' + convertedprogress + '%');
-$("#percentageNumber").html(' ' + progressnumber + '%');
+new Chart(ctx1, {
+  type: "pie",
+  data: {
+    datasets: [
+      {
+        label: "# of Votes",
+        data: [60, 40],
+        borderWidth: 1,
+        backgroundColor: ["#e3c246", "rgba(0,0,0,0)"],
+      },
+    ],
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
+    },
+  },
+});
 
-/* fix for 0% */
-if(progressnumber == 0) {
-    $("#progressbar").css('stroke-dashoffset', '251%');
-}
+new Chart(ctx2, {
+  type: "pie",
+  data: {
+    datasets: [
+      {
+        label: "# of Votes",
+        data: [60, 40],
+        borderWidth: 1,
+        backgroundColor: ["#e3c246", "rgba(0,0,0,0)"],
+      },
+    ],
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
+    },
+  },
+});
 
-//for colours - remove below if you want one color-
-if (progressnumber <= 33) {
-    $("#progressbar").css('stroke', '#f50303');
-    $("#percentageNumber").css('color', '#f50303');
-} else if (progressnumber >= 34 && progressnumber <= 50) {
-    $("#progressbar").css('stroke', '#ffc107');
-    $("#percentageNumber").css('color', '#ffc107');
-} else if (progressnumber >= 51 && progressnumber <= 75) {
-    $("#progressbar").css('stroke', '#ffc107');
-    $("#percentageNumber").css('color', '#ffc107');
-} else {
-    $("#progressbar").css('stroke', '#4caf50');
-    $("#percentageNumber").css('color', '#4caf50');
-}
+new Chart(ctx3, {
+  type: "pie",
+  data: {
+    datasets: [
+      {
+        label: "# of Votes",
+        data: [60, 40],
+        borderWidth: 1,
+        backgroundColor: ["#e3c246", "rgba(0,0,0,0)"],
+      },
+    ],
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
+    },
+  },
+});
+
+new Chart(ctx4, {
+  type: "pie",
+  data: {
+    datasets: [
+      {
+        label: "# of Votes",
+        data: [60, 40],
+        borderWidth: 1,
+        backgroundColor: ["#e3c246", "rgba(0,0,0,0)"],
+      },
+    ],
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
+    },
+  },
+});
