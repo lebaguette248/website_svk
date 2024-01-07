@@ -32,11 +32,17 @@
     <link rel="stylesheet" href="style_projekte.css" />
   </head>
   <body>
-    <!-- <nav>
-      <a href="#Aboutme">About me</a>
-      <a href="#Projekte">Projekte</a>
-      <a href="#zeugnisse">Zeugnisse</a>
-    </nav> -->
+    <nav>
+      <a href="index.html">
+        <img src="pictures/BSPIMG.png" alt="logo" class="logo" />
+      </a>
+      <div
+        style="display: inline;">
+        <a href="aboutme.html">About me</a>
+        <a href="projekte.html">Projekte</a>
+        <a href="zeugnisse.html">Zeugnisse</a>
+      </div>
+    </nav>
 
     <section id="Projekte">
       <div class="sectionwrapper">
@@ -54,7 +60,9 @@
           type="button"
           class="unset"
           data-bs-toggle="modal"
-          data-bs-target="#projekt1"> <!-- Change name to the Modal that needs to be triggered --> 
+          data-bs-target="#projekt1"
+        >
+          <!-- Change name to the Modal that needs to be triggered -->
           <div class="projectwrapper">
             <div>
               <h1>Blabla</h1>
@@ -107,7 +115,8 @@
           type="button"
           class="unset"
           data-bs-toggle="modal"
-          data-bs-target="#projekt4" > 
+          data-bs-target="#projekt4"
+        >
           <div class="projectwrapper">
             <div>
               <h1>Blabla</h1>
@@ -124,7 +133,6 @@
 
     <section>
       <div class="modaltest">
-
         <!-- Modal (CHANGE "ID" to same on )-->
         <div
           class="modal fade"
@@ -147,13 +155,9 @@
                 ></button>
               </div>
               <div class="modal-body">
-                <p>
-                  Very cool text
-                </p>
-                <img src="pictures/BSPIMG.png" class="img-fluid" alt="">
-                <p>
-                  more text yay
-                </p>
+                <p>Very cool text</p>
+                <img src="pictures/BSPIMG.png" class="img-fluid" alt="" />
+                <p>more text yay</p>
               </div>
               <div class="modal-footer">
                 <button

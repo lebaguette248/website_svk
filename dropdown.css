@@ -1,0 +1,57 @@
+.btn {
+    background-color: var(--h1-color);
+    transition: 1s;
+
+}
+
+.btn:hover  {
+    background-color: var(--hover-color) !important;
+}
+
+.dropdown-item  {
+    background-color: var(--h1-color);
+    width: auto;
+    transition: 1s;
+}
+
+.dropdown-menu > * {
+    background-color: var(--background-color);
+    display: block;
+}
+
+ul li {
+    min-height: auto;
+    
+}
+
+.astyling{
+    text-decoration: none;
+    color: var(--text-color);
+    border: 2px solid var(--h1-color);
+    background-color: var(--h1-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.astyling:hover {
+    background-color: var(--hover-color);
+}
+
+ul {
+    width: auto;
+    background-color: var(--background-color);
+}
+
+li::before  {
+    display: none !important;
+}
+
+li  {
+    all: unset;
+    padding: 3px;
+}
+
+.show   {
+    background-color: var(--background-color);
+    box-shadow: none;
+}

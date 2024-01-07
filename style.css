@@ -15,6 +15,7 @@
   --h1-color: #e3c246;
   --text-color: #ffffff;
   --navbar-background-color: #1f1f1f;
+  --hover-color: #fde799;
 }
 *::selection {
   background-color: var(--h1-color);
@@ -43,22 +44,31 @@ p {
 }
 
 nav {
-  overflow: hidden;
-  height: 100px;
-  position: fixed;
-  right: 0;
-  top: 0;
   background-color: var(--background-color);
+  height: 3rem;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-nav a {
-  float: left;
-  display: block;
+.logo {
+  height: 100%;
+}
+
+nav div {
+  text-align: center;
+  padding: 1rem;
+}
+
+
+nav div a {
+  text-decoration: none;
   color: var(--h1-color);
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 2rem;
+  padding: 1rem;
 }
 
 nav a:hover {
@@ -86,6 +96,13 @@ nav a:hover {
   font-size: 2rem;
   background-color: var(--h1-color);
   text-decoration: none;
+
+  transition: 1s;
+
+}
+
+button:hover  {
+  background-color: var(--hover-color);
 }
 
 ul {
